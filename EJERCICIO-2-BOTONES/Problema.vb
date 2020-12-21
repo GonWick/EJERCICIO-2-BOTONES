@@ -15,13 +15,22 @@
         'Declaramos la variable nombre
         Dim nombre As String
         'Entrada de datos mediante un inputbox
-        nombre = InputBox("Ingrese Nombre ",
+        nombre = InputBox("Ingrese nombre de usuario ",
                          "Registro de Datos Personales",
-                         "Nombre", 100, 0)
+                         "Introduce tu nombre")
         MessageBox.Show("Bienvenido Usuario: " + nombre,
                         "Registro de Datos Personales",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information)
+        TextBoxDatos.Text = nombre
 
+    End Sub
+
+    Private Sub ButtonWarning_Click(sender As Object, e As EventArgs) Handles ButtonWarning.Click
+        MessageBox.Show("Borrar: " + TextBoxDatos.Text,
+                        "Borrar Datos Personales",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning)
+        TextBoxDatos.Text = ""
     End Sub
 End Class

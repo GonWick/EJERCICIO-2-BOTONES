@@ -1,6 +1,6 @@
 ﻿Public Class Botones
     Private Sub btnUno_Click(sender As Object, e As EventArgs) Handles btnUno.Click
-        MsgBox("Hola a todos", MsgBoxStyle.Exclamation, "saludo")
+        MsgBox("Hola a todos", MsgBoxStyle.Exclamation, "Saludo")
     End Sub
     Private Sub Sumar_Click(sender As Object, e As EventArgs) Handles Sumar.Click
         Dim num1, num2, suma As Integer
@@ -24,5 +24,9 @@
         If (AbrirFormularioProblema = DialogResult.Yes) Then
             FormProblema.Show()
         End If
+    End Sub
+
+    Private Sub Botones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

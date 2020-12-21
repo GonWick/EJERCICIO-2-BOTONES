@@ -22,6 +22,7 @@ Partial Class Botones
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Botones))
         Me.btnUno = New System.Windows.Forms.Button()
         Me.GroupBoxSuma = New System.Windows.Forms.GroupBox()
         Me.TextBoxResultado = New System.Windows.Forms.TextBox()
@@ -140,6 +141,7 @@ Partial Class Botones
         Me.Controls.Add(Me.GroupBoxSuma)
         Me.Controls.Add(Me.btnUno)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Botones"
