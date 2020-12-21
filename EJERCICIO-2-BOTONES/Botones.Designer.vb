@@ -76,6 +76,7 @@ Partial Class Botones
         Me.TextNum2.Name = "TextNum2"
         Me.TextNum2.Size = New System.Drawing.Size(57, 23)
         Me.TextNum2.TabIndex = 4
+        Me.TextNum2.Text = "0"
         '
         'TextNum1
         '
@@ -83,6 +84,7 @@ Partial Class Botones
         Me.TextNum1.Name = "TextNum1"
         Me.TextNum1.Size = New System.Drawing.Size(57, 23)
         Me.TextNum1.TabIndex = 3
+        Me.TextNum1.Text = "0"
         '
         'Sumar
         '
