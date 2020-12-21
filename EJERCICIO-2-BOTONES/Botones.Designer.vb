@@ -31,15 +31,16 @@ Partial Class Botones
         Me.LabelNumero2 = New System.Windows.Forms.Label()
         Me.LabelNumero1 = New System.Windows.Forms.Label()
         Me.ButtonSalir = New System.Windows.Forms.Button()
+        Me.ButtonProblema = New System.Windows.Forms.Button()
         Me.GroupBoxSuma.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnUno
         '
         Me.btnUno.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnUno.Location = New System.Drawing.Point(12, 181)
+        Me.btnUno.Location = New System.Drawing.Point(12, 13)
         Me.btnUno.Name = "btnUno"
-        Me.btnUno.Size = New System.Drawing.Size(82, 23)
+        Me.btnUno.Size = New System.Drawing.Size(218, 23)
         Me.btnUno.TabIndex = 0
         Me.btnUno.Text = "Saludar"
         Me.btnUno.UseVisualStyleBackColor = True
@@ -52,7 +53,7 @@ Partial Class Botones
         Me.GroupBoxSuma.Controls.Add(Me.Sumar)
         Me.GroupBoxSuma.Controls.Add(Me.LabelNumero2)
         Me.GroupBoxSuma.Controls.Add(Me.LabelNumero1)
-        Me.GroupBoxSuma.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBoxSuma.Location = New System.Drawing.Point(13, 42)
         Me.GroupBoxSuma.Name = "GroupBoxSuma"
         Me.GroupBoxSuma.Size = New System.Drawing.Size(217, 152)
         Me.GroupBoxSuma.TabIndex = 1
@@ -112,25 +113,36 @@ Partial Class Botones
         'ButtonSalir
         '
         Me.ButtonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ButtonSalir.Location = New System.Drawing.Point(147, 181)
+        Me.ButtonSalir.Location = New System.Drawing.Point(12, 260)
         Me.ButtonSalir.Name = "ButtonSalir"
-        Me.ButtonSalir.Size = New System.Drawing.Size(82, 23)
+        Me.ButtonSalir.Size = New System.Drawing.Size(218, 23)
         Me.ButtonSalir.TabIndex = 2
         Me.ButtonSalir.Text = "Salir"
         Me.ButtonSalir.UseVisualStyleBackColor = True
         '
-        'Form1
+        'ButtonProblema
+        '
+        Me.ButtonProblema.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonProblema.Location = New System.Drawing.Point(12, 214)
+        Me.ButtonProblema.Name = "ButtonProblema"
+        Me.ButtonProblema.Size = New System.Drawing.Size(218, 23)
+        Me.ButtonProblema.TabIndex = 3
+        Me.ButtonProblema.Text = "Abrir Problema"
+        Me.ButtonProblema.UseVisualStyleBackColor = True
+        '
+        'Botones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(241, 216)
+        Me.ClientSize = New System.Drawing.Size(242, 295)
+        Me.Controls.Add(Me.ButtonProblema)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.GroupBoxSuma)
         Me.Controls.Add(Me.btnUno)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Form1"
+        Me.Name = "Botones"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EJERCICIO 2"
         Me.GroupBoxSuma.ResumeLayout(False)
@@ -149,4 +161,5 @@ Partial Class Botones
     Friend WithEvents TextNum2 As TextBox
     Friend WithEvents ButtonSalir As Button
     Friend WithEvents TextBoxResultado As TextBox
+    Friend WithEvents ButtonProblema As Button
 End Class

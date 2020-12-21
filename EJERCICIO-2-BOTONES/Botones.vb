@@ -14,4 +14,15 @@
     Private Sub ButtonSalir_Click(sender As Object, e As EventArgs) Handles ButtonSalir.Click
         Close()
     End Sub
+
+    Private Sub ButtonProblema_Click(sender As Object, e As EventArgs) Handles ButtonProblema.Click
+        Dim AbrirFormularioProblema As DialogResult
+        AbrirFormularioProblema = MessageBox.Show("Realmente desea abrir el Formulario Problema",
+                                 "Abrir Problema",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question)
+        If (AbrirFormularioProblema = DialogResult.Yes) Then
+            FormProblema.Show()
+        End If
+    End Sub
 End Class
