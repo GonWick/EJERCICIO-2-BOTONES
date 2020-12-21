@@ -12,6 +12,6 @@
 
     End Sub
     Private Sub ButtonSalir_Click(sender As Object, e As EventArgs) Handles ButtonSalir.Click
-        End
+        Close()
     End Sub
 End Class
